@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>dessert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{items.name}}
+  <ion-item>
+    <ion-label>{{items?.name|async}}test</ion-label>
+    <ion-label position="stacked" >name</ion-label>
+    <ion-input [(ngModel)]="db_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked" >number id</ion-label>
+    <ion-input [(ngModel)]="db_numid"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked" >work</ion-label>
+    <ion-input [(ngModel)]="db_work"></ion-input>
+  </ion-item>
+
+</ion-content>
